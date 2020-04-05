@@ -75,15 +75,33 @@ namespace CSharpAlgo
         
     }
 
+
+        public void A283_MoveZeroes(int[] nums)
+        {
+            int i = 0;
+            int j = 0;
+
+            while (j < nums.Length)
+            {
+                if (nums[j] != 0)
+                {
+                    nums[i++] = nums[j];
+                }
+
+                j++;
+            }
+
+            while (i < nums.Length)
+            {
+                nums[i++] = 0;
+            }
         }
 
-    
-
-
-         
+    }
+             
            
 
-    }
+}
 
         
  
